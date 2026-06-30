@@ -1,14 +1,18 @@
-const button = document.getElementById("btn");
+function login() {
 
-button.addEventListener("click", function () {
-    alert("Welcome to my Portfolio!");
-});
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
 
-// Redirect to login page
-const loginBtn = document.getElementById("loginBtn");
+    // Demo credentials
+    if (username === "admin" && password === "1234") {
 
-if (loginBtn) {
-    loginBtn.addEventListener("click", function () {
-        window.location.href = "login.html";
-    });
+        // Redirect to portfolio
+        window.location.href = "index.html";
+
+    } else {
+
+        document.getElementById("error").textContent =
+            "Invalid Username or Password";
+    }
+
 }
