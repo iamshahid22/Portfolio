@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="login-container">
-        <h1>Login</h1>
+<div class="login-container">
+    <h1>Portfolio Login</h1>
 
-        <form>
-            <input type="text" placeholder="Username" required>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
 
-            <input type="password" placeholder="Password" required>
+    <button onclick="login()">Login</button>
 
-            <button type="submit">Login</button>
-        </form>
+    <p id="error"></p>
+</div>
 
-        <br>
+<script src="script.js"></script>
 
-        <a href="index.html">⬅ Back to Portfolio</a>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
